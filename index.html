@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-
-<h1>Hello World2</h1>
-
+    <div class="container">
+        <h1>Artist Portfolio</h1>
+        <div class="gallery">
+            <img src="https://trash-nasty.static.domains/56ce36ca-fda9-40b9-8ab8-5e0c96619b19_signed23.png" alt="Photo 1">
+            <img src="https://trash-nasty.static.domains/75f52205-f111-4032-af64-7a0ee21f99c7_signed549.png" alt="Photo 2">
+            <img src="https://trash-nasty.static.domains/77f02379-bde6-4efc-8ede-70b89cac0cbb_signed690.png" alt="Photo 3">
+            <img src="https://trash-nasty.static.domains/ad90f4d1-22fd-4438-af94-4be8b39a89c4_signed897.png" alt="Photo 4">
+            <img src="https://trash-nasty.static.domains/d3844a5c-0332-4f64-962d-b8660b5bedb8_signed788.png" alt="Photo 3">
+        </div>
+    </div>
 </body>
 </html>
